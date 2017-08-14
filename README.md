@@ -156,4 +156,14 @@ class LogServiceProvider extends ServiceProvider
 }
 ```
 
+Debugging those kind of webhooks with a EC2 instance sometimes is a bit hard. But we can easily expose our local webserver to internet with ngrok (https://ngrok.com/).
+We only need to start our local server 
+
+> php -S 0.0.0.0:8080 -t www
+
+And create a tunnel wiht ngrok
+
+> ngrok http 8080
+
+
 And that's up. Lumen and SNS up and running. 
