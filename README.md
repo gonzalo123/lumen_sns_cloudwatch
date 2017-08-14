@@ -145,7 +145,7 @@ class LogServiceProvider extends ServiceProvider
         $cwStreamNameInstance = getenv('CW_STREAMNAMEINSTANCE');
         $loggerName           = getenv('CF_LOGGERNAME');
 
-        $logger    = new Logger($loggerName);
+        $logger  = new Logger($loggerName);
         $handler = new CloudWatch($cwClient, $cwGroupName, $cwStreamNameInstance, $cwRetentionDays);
         $handler->setFormatter(new LineFormatter(null, null, false, true));
 
