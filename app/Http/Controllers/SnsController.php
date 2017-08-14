@@ -18,10 +18,6 @@ class SnsController extends Controller
         $this->logger  = $logger;
     }
 
-    public function hi()
-    {
-        return ['hi'];
-    }
 
     public function push(SnsClient $snsClient)
     {
