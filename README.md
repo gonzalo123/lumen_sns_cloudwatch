@@ -1,7 +1,7 @@
-Handling Amazon SNS messages with PHP and Lumen and CloudWatch
+Handling Amazon SNS messages with PHP, Lumen and CloudWatch
 ======
 
-This days I'm involve with Amazon and since I am migrating my backends to Lumen I'm going to play a little bit with AWS and Lumen. Today I want to create a simple Lumen server to handle SNS notifications. One end point to listen to SNS and another one emit notifications. I also want to register logs within CloudWatch. Let's start.
+This days I'm involve with Amazon's AWS and since I am migrating my backends to Lumen I'm going to play a little bit with AWS and Lumen. Today I want to create a simple Lumen server to handle SNS notifications. One end-point to listen to SNS and another one to emit notifications. I also want to register logs within CloudWatch. Let's start.
 
 
 First the Lumen server. 
